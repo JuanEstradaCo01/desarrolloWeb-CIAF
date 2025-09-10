@@ -34,6 +34,57 @@
     }
 
     main {
+        background-color: beige;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 10rem;
+
+        hr {
+            width: 100%;
+            border: 1px solid black;
+            margin: 2rem 0rem;
+        }
+
+        .cardsContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                background-color: white;
+                margin: 10rem;
+                padding: 5rem;
+                text-align: center;
+                border-radius: 1rem;
+
+                img {
+                    width: 100%;
+                    border-radius: 1rem;
+                }
+
+                .descriptionCardsContainer {
+                    padding: 2rem;
+
+                    h3 {
+                        font-family: cursive;
+                        font-weight: bolder;
+                        font-size: 3rem;
+                        color: rgb(255, 115, 0);
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
 
         h1,
         h2 {
@@ -46,14 +97,6 @@
         p {
             font-size: 1.2rem;
         }
-
-        background-color: beige;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 0rem 10rem;
 
         img {
             margin: 5rem;
@@ -123,6 +166,96 @@
 
             input[type="submit"]:active {
                 transform: scale(0.98);
+            }
+        }
+
+        .galleryContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+
+            img {
+                width: 20.5rem;
+                margin: 0rem;
+            }
+        }
+
+        .containerItemsHome {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .item1 {
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                margin: 2rem;
+                padding: 2rem;
+                border-radius: 1rem;
+                text-align: center;
+                flex: 1 1 100px;
+            }
+
+            .item2 {
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                margin: 2rem;
+                padding: 2rem;
+                border-radius: 1rem;
+                text-align: center;
+                width: auto;
+                flex: 2 1 100px;
+            }
+
+            .item3 {
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                margin: 2rem;
+                padding: 2rem;
+                border-radius: 1rem;
+                text-align: center;
+                flex: 3 1 100px;
+            }
+
+        }
+
+        .containerItemsOrder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+
+            .itemOrder1,
+            .itemOrder2,
+            .itemOrder3 {
+                background-color: white;
+                margin: 2rem;
+                padding: 2rem;
+                border-radius: 1rem;
+                text-align: center;
+                width: 50%;
+            }
+
+            .itemOrder1:nth-child(1) {
+                align-self: flex-start;
+            }
+
+            .itemOrder2:nth-child(2) {
+                align-self: center;
+            }
+
+            .itemOrder3:nth-child(3) {
+                align-self: flex-end;
+            }
+
+            .itemOrder3:nth-child(3) {
+                order: -1;
             }
         }
 
