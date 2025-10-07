@@ -1,0 +1,44 @@
+.catsImagesContainer,
+.clickCounterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+    img {
+        margin: auto;
+        width: 50%;
+        border-radius: 1rem;
+    }
+
+    button {
+        margin: auto;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #255727;
+        }
+    }
+
+    .clickCounter {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        flex-direction: column;
+
+        #clicksNumber {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: auto;
+        }
+    }
+}
