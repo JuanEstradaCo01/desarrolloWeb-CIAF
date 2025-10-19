@@ -9,7 +9,7 @@
 </head>
 
 <body id="body">
-    <header>
+    <header id="header">
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -17,11 +17,14 @@
                 <li><a href="./pages/services.html">Services</a></li>
                 <li><a href="./pages/contact.html">Contact</a></li>
                 <li><a href="./pages/gallery.html">Gallery</a></li>
+                <div class="darkBtnLightContainer">
+                    <button id="btnDarkLigth">Dark mode</button>
+                </div>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main">
 
         <h1>¡Welcome to my first web page!</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi necessitatibus quis doloremque et, debitis
@@ -31,7 +34,7 @@
             possimus recusandae voluptatum.
         </p>
 
-        <hr>
+        <hr id="hr">
 
         <div class="cardsContainer">
 
@@ -46,7 +49,7 @@
             </div>
 
             <div class="card">
-                <img src="./images/welcome.jpg" alt="Imagen de ejemplo">
+                <img src="./images/cat1.jpg" alt="Imagen de ejemplo">
                 <div class="descriptionCardsContainer">
                     <h3>Card 2</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi minus quae, earum ad sequi
@@ -56,7 +59,7 @@
             </div>
 
             <div class="card">
-                <img src="./images/welcome.jpg" alt="Imagen de ejemplo">
+                <img src="./images/cat2.jpg" alt="Imagen de ejemplo">
                 <div class="descriptionCardsContainer">
                     <h3>Card 3</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi minus quae, earum ad sequi
@@ -67,7 +70,7 @@
 
         </div>
 
-        <hr>
+        <hr class="hr">
 
         <div class="containerItemsHome">
             <div class="item1">
@@ -86,7 +89,7 @@
             </div>
         </div>
 
-        <hr>
+        <hr id="hr">
 
         <h2>Items order</h2>
 
@@ -111,10 +114,12 @@
 
     </main>
 
-    <footer>
+    <footer id="footer">
         <p>©2025 Juan Pablo Estrada - All rights reserved.</p>
     </footer>
 
 </body>
+
+<script src="./scripts/script.js"></script>
 
 </html>
